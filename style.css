@@ -1,0 +1,50 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  overflow: hidden;
+  filter: brightness(100%);
+}
+.wall-switch {
+  background-color: #ebebeb;
+  width: 300px;
+  height: 500px;
+  box-shadow: inset -10px -10px 22px 0px rgba(255,255,255,1), inset 10px 10px 22px 0px rgba(0,0,0,0.30);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+  border-radius: 4px;
+}
+.screw {
+  padding: 7.5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 2.5px 2.5px 10px 0px rgba(255,255,255,1), inset -2.5px -2.5px 10px 0px rgba(0,0,0,0.30), 0px 0px 2px 1px rgba(0,0,0,0.40);
+}
+.icon {
+  transition-duration: 10s;
+  transition-timing-function: linear;
+}
+.icon:active {
+  transform: rotate(-3600deg);
+}
+.padding {
+  padding: 55px;
+}
+.switch {
+  width: 105px;
+  height: 200px;
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.40), inset 0px 95px 20px 0px #ebebeb, inset 0px -95px 20px 0px rgba(0,0,0,0.20);
+  border-radius: 2.5px;
+}
+.switch:active {
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.40), inset 0px -95px 20px 0px #6b6b6b, inset 0px 95px 20px 0px rgba(0,0,0,0.20);
+}
+.switch:active .wall-switch {
+  background-color: #6b6b6b;
+} 
